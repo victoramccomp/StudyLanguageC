@@ -1,32 +1,47 @@
 #include <stdio.h>
 
-int main() {
-	int n, 
-		first, 
-		second, 
-		next, 
-		count;
+int main() 
+{
+	int n = 0, 
+		first = 0, 
+		second = 1, 
+		next = 0, 
+		count = 0;
 	
-	printf("Qual a sequencia desejada?\n");
-	scanf("%d", &n);
+	char option = 'y';
 	
-	for (count = 0; count < n; count++)
+	while(option == 'y')
 	{
-		if  (count <= 1)
+		printf("Tell me the order number of the Fibonacci sequence that you desire\n");
+		scanf("%d", &n);
+
+		for (count = 0; count < n; count++)
 		{
-			next = count;
-		}
-		else
-		{
-			next = first + second;
-			first = second;
-			second = next;
+			if  (count <= 1)
+			{
+				next = count;
+			}
+			else
+			{
+				next = first + second;
+				first = second;
+				second = next;
+			}
+			
+			printf("-> %d\n", next);
 		}
 		
-		printf("%d\n", next);
+		printf("The element you desire is %d\n\n", next);
+				
+		first = 0;
+		second = 1;
+		next = 0;
+		count = 0;
+		
+		printf("Let's do it again? y/n\n");
+		scanf("%s", &option);
+		
+		printf("\n========================\n\n");
 	}
-	
-	printf("O elemento desejado: %d\n", next);
-	
 	return 0;
 }
