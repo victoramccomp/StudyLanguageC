@@ -8,6 +8,7 @@ int main()
 		next = 0, 
 		count = 0;
 	
+	//This is a comment
 	char option = 'y';
 	
 	while(option == 'y')
