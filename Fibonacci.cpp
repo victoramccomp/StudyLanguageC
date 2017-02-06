@@ -7,8 +7,10 @@ int main()
 		second = 1, 
 		next = 0, 
 		count = 0;
-	
+	//VICTOR
+	//VICTOR
 	//This is a comment
+	//VICTOR
 	char option = 'y';
 	
 	while(option == 'y')
