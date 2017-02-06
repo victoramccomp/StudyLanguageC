@@ -7,8 +7,9 @@ int main()
 		second = 1, 
 		next = 0, 
 		count = 0;
-	
+	//kaleo
 	//This is a comment
+	// kaleo
 	char option = 'y';
 	
 	while(option == 'y')
